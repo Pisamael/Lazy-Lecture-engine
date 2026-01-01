@@ -21,5 +21,5 @@ An automated tool that takes audio recordings or images of blackboards and conve
 
 1. Clone the repo:
    ```bash
-   git clone [https://github.com/Pisamael/AI-Lecture-Notes.git](https://github.com/Pisamael/AI-Lecture-Notes.git)
-   cd AI-Lecture-Notes
+   git clone [https://github.com/Pisamael/Lazy-Lecture-engine.git](https://github.com/Pisamael/Lazy-Lecture-engine.git)
+   cd Lazy-Lecture-engine

@@ -1,0 +1,4 @@
+openai-whisper
+ollama
+torch
+fpdf

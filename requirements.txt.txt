@@ -1,4 +1,9 @@
 openai-whisper
-ollama
-torch
+ollama-minicpm-v
+torch 2.10
 fpdf
+flask
+ngrok
+cuda 12.8
+
+

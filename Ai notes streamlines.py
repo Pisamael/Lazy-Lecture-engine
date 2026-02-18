@@ -9,7 +9,7 @@ from tkinter import filedialog
 from fpdf import FPDF
 
 # --- CONFIGURATION ---
-WATCH_FOLDER = r"C:\Users\shawn\Documents\Lecture AI Notes"
+WATCH_FOLDER = r"Z:\Dev_Workspace\Data\Output\Lectures"
 VISION_MODEL = "minicpm-v" 
 
 # --- UI: FILE SELECTION ---
@@ -65,10 +65,13 @@ if image_files:
         
         try:
             response = ollama.chat(model=VISION_MODEL, messages=[
-                {'role': 'user', 
-                 'content': f"Context: Lecture on '{topic_hint}'. Summarize this slide in bullet points. Convert math to LaTeX.", 
-                 'images': [img_path]}
-            ])
+    {'role': 'system', 'content': 'You are in Deep Thinking mode. Analyze every detail of the image carefully.'},
+    {'role': 'user', 
+     'content': "Extract all text from this slide. Do not summarize until all text is identified.", 
+     'images': [img_path]}
+])
+            
+        
             
             # Save data for PDF
             slide_notes.append({

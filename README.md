@@ -9,13 +9,13 @@ An automated tool that takes audio recordings or images of blackboards and conve
 * **AI Summarization:** Uses **Ollama** to structure raw transcripts into concise bullet points.
 * **Image Recognition:** Extracts text from blackboard photos using **MiniCPM-V** (Vision Language Model).
 * **Wireless Mobile Bridge:** Upload files directly from your phone via a custom Flask + Ngrok web interface.
-* **Local Privacy:** Runs entirely on your **Lenovo Legion (RTX 5060)** with storage on your local **Z: drive**.
+* **Local Privacy:** Runs entirely on your **PC** with storage on your local **Z: drive**.
 
 ## 🛠️ Prerequisites
 
 * **Python 3.10+**
 * [Ollama](https://ollama.com/) installed and running.
-* **NVIDIA GPU** (RTX 5060 or better recommended) with CUDA 12.x support.
+* **NVIDIA GPU** with CUDA 12.x support.
 * [FFmpeg](https://ffmpeg.org/) (Required for Whisper audio processing).
 
 ## 📦 Installation
@@ -83,7 +83,7 @@ python "Ai notes streamlines.py"
 
 ```
 
-*Files are automatically saved to: `Z:\Dev_Workspace\Data\Output\Lectures*`
+*Files are automatically saved to: `Your Preferred Folder*`
 
 ## 📂 Project Structure
 
